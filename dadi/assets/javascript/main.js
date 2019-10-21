@@ -1,33 +1,28 @@
 // Gioco dei dadi, chi fa di più vince;
 
+// dichiarazione delle variabili
+var user1, user2, number1, number2, calcolo;
 
 // chiediamo il nome ai partecipanti
 
-var user1 = prompt("Come ti chiami, giocatore 1?")
+user1 = prompt("Come ti chiami, giocatore 1?")
 
-console.log(user1);
 
-var user2 = prompt("E tu come ti chiami, giocatore 2")
+user2 = prompt("E tu come ti chiami, giocatore 2")
 
-console.log(user2);
 
 // facciamo scegliere a due user due numeri
-var number1 = prompt(user1 + ", scegli un numero!")
+number1 = prompt(user1 + ", scegli un numero!")
 
-console.log(number1);
 
-var number2 = prompt("Ora tocca a te scegliere, " + user2)
+number2 = prompt("Ora tocca a te scegliere, " + user2)
 
-console.log(number2);
 
 
 // facciamo fare il calcolo randomico al pc
-var calcolo = Math.floor(Math.random() *6) + 1;
+calcolo = Math.floor(Math.random() *6) + 1;
 
-document.getElementById("mioid").innerHTML = "Il risultato del dado è: " + calcolo
-
-console.log(calcolo);
-
+document.getElementById("mioid").innerHTML = "Il risultato del dado è: " + calcolo + "."
 
 
 // stampa a schermo dell'utente vincitore
