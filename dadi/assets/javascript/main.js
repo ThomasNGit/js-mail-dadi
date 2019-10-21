@@ -18,11 +18,38 @@ number1 = prompt(user1 + ", scegli un numero!")
 number2 = prompt("Ora tocca a te scegliere, " + user2)
 
 
-
 // facciamo fare il calcolo randomico al pc
-calcolo = Math.floor(Math.random() *6) + 1;
+calcolo = Math.floor(Math.random() * 6) + 1;
 
-document.getElementById("mioid").innerHTML = "Il risultato del dado è: " + calcolo + "."
+document.getElementById("calcolopc").innerHTML = "Il risultato del dado è: " + calcolo + "."
+
+
+// inserite le immagini del risultato del dado
+if (calcolo == 1){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado1.png'>"
+
+}if (calcolo == 2){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado2.png'>"
+
+}if (calcolo == 3){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado3.png'>"
+
+}if (calcolo == 4){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado4.png'>"
+
+}if (calcolo == 5){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado5.png'>"
+
+}if (calcolo == 6){
+
+  document.getElementById("dadoimg").innerHTML = "<img src='assets/img/dado6.png'>"
+
+}
 
 
 // stampa a schermo dell'utente vincitore
