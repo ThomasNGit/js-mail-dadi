@@ -8,19 +8,28 @@ var usermail = prompt("Qual è il tuo indirizzo email?")
 // creazione array con lista email degli invitati
 var invitati = ["mail1", "mail2", "mail3"];
 
+// variabile appoggio per vedere se sei stato invitato
+invitato = false
 
 
 // creazione del ciclo per stabilire se la mail è presente nella lista degli invitati
 for (var i = 0; i < invitati.length; i++) {
 
-  if (invitati[i] == usermail) {
+  if (usermail == invitati[i]){
 
-    document.getElementById("mioid").innerHTML = "Sì";
-
-  } else {
-
-    document.getElementById("mioid").innerHTML = "No";
+    invitato = true;
 
   }
+
+}
+
+
+if (invitato == true){
+
+  document.getElementById("mioid").innerHTML = "Il tuo nome è sulla lista, " + usermail;
+
+} else {
+
+  document.getElementById("mioid").innerHTML = "Il tuo nome non è sulla lista, " + usermail;
 
 }
