@@ -11,17 +11,18 @@ var invitati = ["mail1", "mail2", "mail3"]
 
 console.log(invitati);
 
+
 // creazione del ciclo per stabilire se la mail è presente nella lista degli invitati
 for (var i = 0; i < invitati.length; i++) {
 
   if (usermail != invitati[i]){
 
-  document.getElementById('mioid').inneHTML = usermail;
+  document.getElementById('mioid').innerHTML = "non sei invitato";
 
 
-} else {
+} else{
 
-  document.getElementById('mioid').inneHTML = usermail;
+  document.getElementById('mioid').innerHTML = "sei invitato";
 
 }
 
