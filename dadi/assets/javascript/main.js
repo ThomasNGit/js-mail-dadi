@@ -12,10 +12,17 @@ user2 = prompt("E tu come ti chiami, giocatore 2")
 
 
 // facciamo scegliere a due user due numeri
+
+// scelta user 1 e stampa a schermo
 number1 = prompt(user1 + ", scegli un numero!")
 
+document.getElementById("scelta1").innerHTML = user1 + " hai scelto il numero: " + number1
 
+
+// scelta user 2 e stampa a schermo
 number2 = prompt("Ora tocca a te scegliere, " + user2)
+
+document.getElementById("scelta2").innerHTML = user2 + " hai scelto il numero: " + number2
 
 
 // facciamo fare il calcolo randomico al pc
