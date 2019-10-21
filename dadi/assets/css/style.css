@@ -35,8 +35,16 @@ header h1{
   align-items: center;
 }
 
+.choice-wrapper{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #scelta1, #scelta2{
   margin-top: 50px;
+  margin: 20px auto;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
